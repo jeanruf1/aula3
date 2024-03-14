@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dr. Robervando Paixão</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    .container {
+        margin: 0 auto;
+        width: 80%;
+        text-align: left;
+    }
+    .ref {
+        margin-top: 20px;
+        margin-left: 27%;
+    }
+    .ref a {
+        font-size: 30px;
+        padding: 10px;
+        border: solid aqua;
+        background-color: aquamarine;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #f9f9f9;
+        border-radius: 6px;
+        padding-top: 20px;
+    }
+    form label {
+        margin-bottom: 10px;
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form input[type="date"],
+    form select,
+    form textarea {
+        width: 30%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px;
+        box-sizing: border-box;
+    }
+    form textarea {
+        max-width: 400px;
+    }
+    form button {
+        padding: 10px 20px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    form button:hover{
+        background-color: rgb(103, 203, 170);
+    }
+    form input[type="email"],
+    form textarea{
+        width: 50%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px ;
+    }
+    form input[type="mensagem"],
+    form textarea{
+        height: 100px;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="ref"> 
+            <a href="index.html"> Home</a>
+            <a href="curriculo.html"> Currículo</a>
+            <a href="especialidade.html"> Especialidades</a>
+            <a href="contato.html"> Contato</a>
+        </nav>
+        <form action="emails/">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <label for="consultorio">Consultório de preferência:</label>
+            <select id="consultorio" name="consultorio">
+                <option value="consultorio1">Consultório 1</option>
+                <option value="consultorio2">Consultório 2</option>
+                <option value="consultorio3">Consultório 3</option>
+            </select>
+            <label for="data">Data da consulta:</label>
+            <input type="date" id="data" name="data">
+            <label for="site">Como chegou em nosso site?</label>
+            <select id="site" name="site">
+                <option value="busca">Busca na internet</option>
+                <option value="indicacao">Indicação de amigo</option>
+                <option value="rede_social">Rede social</option>
+            </select>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
